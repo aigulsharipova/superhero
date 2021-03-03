@@ -35,7 +35,7 @@ h1 {
 #collection {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 40px;
 }
 
@@ -43,11 +43,12 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
+  width: calc(100% / 3 - 10px);
   height: 400px;
   border-radius: 7px;
   box-shadow: 3px 3px 7px 2px palevioletred;
   margin-top: 50px;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -58,6 +59,9 @@ h1 {
   border: 1px dotted red ;
 }
 img {
-  width: 300px;
-  height: 200px;
+  width: 200px;
+  height: 300px;
+}
+.card h2 {
+  margin-bottom: 40px;
 }
